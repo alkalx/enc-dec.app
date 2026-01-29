@@ -296,7 +296,7 @@
 
             try {
                 const startTime = Date.now();
-                const response = await fetch('/.netlify/functions/dec-videasy', {
+                const response = await fetch('/api/dec-videasy', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ text, id })
@@ -333,7 +333,7 @@
 
             try {
                 const startTime = Date.now();
-                const response = await fetch('/.netlify/functions/dec-hahoy', {
+                const response = await fetch('/api/dec-hahoy', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ text })
